@@ -1,0 +1,9 @@
+.weather-result-box{
+	background-color: white;
+	padding:  10px;
+	border-radius: 10px;
+}
+
+.table{
+	font-size: 14px;
+}

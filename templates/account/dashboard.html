@@ -1,0 +1,137 @@
+{% extends 'account/base.html' %}
+
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+<!-- <link rel="stylesheet" href="/resources/demos/style.css"> -->
+{% endblock css %}
+
+{% block section %}
+<!-- Dashboard Section Start Here -->
+<section class="content">
+    <div class="content_header">
+        <h2>Dashboard</h2>
+    </div>
+    <div class="container">
+        <form method="POST" id="search-weather-form">
+            {% csrf_token %}
+            <input type="hidden" name="city_key" id="city-key">
+            <input type="hidden" name="city_name" id="city-name">
+            <div class="row mt-4 px-3">
+                <div class="col-md-9">
+                    <input type="text" name="" id="city" class="form-control" placeholder="Type City Name Here">
+                </div>
+                <div class="col-md-3">
+                    <button class="btn btn-info" id="get-weather-info-btn"><i class="fa fa-search-plus"></i> Get Weather Info</button>
+                </div>
+            </div>
+        </form>
+
+        <div class="col-md-12">
+
+            <div class="row mt-4 px-3 weather-result-box d-none">
+                <div class="col-md-12">
+                    <table class="table table-borderless">
+                        <tr>
+                            <td class="weather-title">Headline:</td>
+                            <td class="weather-value" id="headline_text"></td>
+                        </tr>
+                        <tr>
+                            <td class="weather-title">Date:</td>
+                            <td class="weather-value" id="dailyfc_date"></td>
+                        </tr>
+                        <tr>
+                            <td class="weather-title">Minimum Temperature:</td>
+                            <td class="weather-value" id="temperature_min_val"></td>
+                        </tr>
+                        <tr>
+                            <td class="weather-title">Maximum Temperature:</td>
+                            <td class="weather-value" id="temperature_max_val"></td>
+                        </tr>
+                        <tr>
+                            <td class="weather-title">Day Conditions:</td>
+                            <td class="weather-value" id="day_conditions"></td>
+                        </tr>
+                        <tr>
+                            <td class="weather-title">Day Precipitation:</td>
+                            <td class="weather-value" id="day_precipitation"></td>
+                        </tr>
+                        <tr>
+                            <td class="weather-title">Night Conditions:</td>
+                            <td class="weather-value" id="night_conditions"></td>
+                        </tr>
+                        <tr>
+                            <td class="weather-title">Night Precipitation:</td>
+                            <td class="weather-value" id="night_precipitation"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock section %}
+{% block script %}
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+<script type="text/javascript">
+    $( function() {
+        function log( message ) {
+          $( "<div>" ).text( message ).prependTo( "#log" );
+          $( "#log" ).scrollTop( 0 );
+      }
+
+      $( "#city" ).autocomplete({
+          source: function( request, response ) {
+            $.ajax( {
+              url: "{% url 'search-city' %}",
+              dataType: "json",
+              data: {
+                term: request.term
+            },
+            success: function( data ) {
+                response( data );
+            }
+        } );
+        },
+        minLength: 2,
+        select: function( event, ui ) {
+            $("#city-key").val(ui.item.id);
+            $("#city-name").val(ui.item.value);
+        }
+    } );
+  } );
+
+    $("#get-weather-info-btn").on("click", function(e){
+        e.preventDefault(); // avoid to execute the actual submit of the form.
+
+        var form = $("#search-weather-form");
+        var actionUrl = "{% url 'get-weather-info' %}";
+
+        if($("#city-key").val() == ''){
+            alert("Please select City");
+            return false;
+        }
+        
+        $.ajax({
+            type: "POST",
+            url: actionUrl,
+            data: form.serialize(), // serializes the form's elements.
+            success: function(data)
+            {
+              $("#headline_text").text(data.headline_text);
+              $("#dailyfc_date").text(data.dailyfc_date);
+              $("#temperature_min_val").text(data.temperature_min_val+" "+data.temperature_min_unit);
+              $("#temperature_max_val").text(data.temperature_max_val+" "+data.temperature_max_unit);
+              $("#day_conditions").text(data.day_conditions);
+              $("#day_precipitation").text(data.day_precipitation);
+              $("#night_conditions").text(data.night_conditions);
+              $("#night_precipitation").text(data.night_precipitation);
+
+              $(".weather-result-box").removeClass("d-none");
+          }
+      });
+    });
+</script>
+{% endblock script %}

@@ -1,0 +1,90 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>Weather Forecast</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="{% static 'assets/css/bootstrap.css' %}" type="text/css" rel="stylesheet">
+	<link href="{% static 'assets/css/style.css' %}" type="text/css" rel="stylesheet">
+	<link href="{% static 'fonts/font.css' %}" type="text/css" rel="stylesheet">
+	<link href="{% static 'assets/css/custom.css' %}" type="text/css" rel="stylesheet">
+	{% block css %}{% endblock css %}
+</head>
+
+<body>
+	<!-- Header Section Start Here -->
+	<header>
+		<div class="header_inner d-new-a">
+			<div class="toggleMenu">
+				<span class="bar1"></span>
+				<span class="bar2"></span>
+				<span class="bar3"></span>
+			</div>
+			<div class="logo">
+				<a href="#">
+					<h1>Weather Forecast</h1>
+				</a>
+			</div>
+			<div class="header_user">
+				<a href="#">
+					<span>Hello, {{request.user.username}}</span>
+					<img src="{% static 'assets/images/user-avtar.png' %}" alt="">
+				</a>
+			</div>
+		</div>
+	</header>
+	<!-- Header Section End Here -->
+	<!-- Sidebar Section Start Here -->
+	<div class="sidebar">
+		<div class="menu menu_top">
+			<ul>
+				<li class="active">
+					<a href="{% url 'dashboard' %}">
+						<div class="menu_icon">
+							<img src="{% static 'assets/images/icon-dashboard.png' %}" alt="">
+						</div>
+						<span>Dashboard</span>
+					</a>
+				</li>
+
+				<li>
+					<a href="{% url 'all-weather-details' %}">
+						<div class="menu_icon">
+							<img src="{% static 'assets/images/icon-help.png' %}" alt="">
+						</div>
+						<span>Get all details in table</span>
+					</a>
+				</li>
+
+			</ul>
+		</div>
+		<div class="menu menu_bottom">
+			<ul>
+				<li>
+					<a href="{% url 'logout' %}">
+						<div class="menu_icon">
+							<img src="{% static 'assets/images/icon-logout.png' %}" alt="">
+						</div>
+						<span>Log Out</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- Sidebar Section End Here -->
+	{% block section %}
+	<!-- Dashboard Section Start Here -->
+	<!-- Dashboard Section End Here -->
+	{% endblock section %}
+
+	<!-- Commercial listing Section End Here -->
+	<script src="{% static 'assets/js/jquery.js' %}" type="text/javascript"></script>
+	<script src="{% static 'assets/js/bootstrap.js' %}" type="text/javascript"></script>
+	<script src="{% static 'assets/js/custom.js' %}" type="text/javascript"></script>
+	{% block script %}{% endblock script %}
+</body>
+
+</html>

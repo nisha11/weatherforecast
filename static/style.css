@@ -1,0 +1,3354 @@
+body{
+	font-family: 'Poppins';
+    font-weight: normal;
+    font-style: normal;
+    overflow-x: hidden;
+    font-size: 16px;
+    color: #2d2d2d;
+    background: #e8e8e8;
+    letter-spacing: 0.25px;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+	margin: 0px;
+	padding: 0px;
+	font-weight: normal;
+}
+ul{
+	margin: 0px;
+	padding:0px;
+	list-style: none;
+}
+a{
+	text-decoration: none !important;
+	outline: none !important;
+}
+.d-new{
+	display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.d-align{
+	display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.d-new-a{
+	display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+     -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+a{
+	transition: all 0.3s linear;
+}
+/*------------------ Author Information Page Css Start ------------------*/
+header{
+    position: fixed;
+    left: 0px;
+    width: 100%;
+    background: #1b2855;
+    padding: 0px 27px;
+    z-index: 10;
+}
+.header_inner{
+    min-height: 65px;
+}
+.logo a{
+    display: block;
+}
+.logo  h1{
+    color: #fff !important;
+    font-weight: 500;
+    font-size: 27.08px;
+    letter-spacing: 0.5px;
+}
+.header_user > a{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}
+.header_user > a > img{
+    height: 37px;
+    width: 37px;
+    margin-left: 15px;
+}
+.sidebar{
+    padding-top: 15px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    top: 65px;
+    left: 0px;
+    width: 350px;
+    background: #1b2855;
+    height: calc(100vh - 65px);
+    overflow: hidden;
+    overflow-y: auto;
+    border-top: 1px solid #cdf3ff;
+}
+.menu > ul > li > a{
+    min-height: 78px;
+    padding: 5px 27px;
+    display: flex;
+    align-items: center;
+    font-size: 26.04px;
+    letter-spacing: 0.5px;
+    color: #fff !important;
+}
+.menu > ul > li > a:hover,.menu > ul > li.active > a{
+    background:#011047;
+    font-weight: 600;
+}
+.menu_icon{
+    width: 43px;
+    margin-right: 33px;
+}
+.menu_icon img{
+    max-width: 100%;
+}
+.submenu{
+    background:#011047;
+    padding-left: 103px;
+    display: none;
+    border-top: 1px solid rgba(205,243,255,0.36);
+}
+.submenu.open{
+    display: block;
+}
+.submenu ul{
+    padding: 10px 0px;
+}
+.submenu a{
+    font-size:15px;
+    display: block;
+    letter-spacing: 0.5px;
+    color: #a9eaff;
+    padding: 7px 10px;
+}
+.submenu li.active a,.submenu li a:hover{
+    color: #f5fdff;
+    font-weight: 600;
+}
+.menu_bottom{
+    border-top:1px solid #cdf3ff;
+}
+.content{
+    padding: 164px 0px 0px 350px;
+}
+.content_header{
+    background: #fff;
+    min-height: 99px;
+    display: flex;
+    align-items: center;
+    padding: 5px 60px;
+    justify-content: space-between;
+    position: fixed;
+    top: 65px;
+    left: 350px;
+    width: calc(100% - 350px);
+    z-index: 10;
+    -webkit-box-shadow: 0px 2px 2px rgb(0 0 0 / 5%);
+    -moz-box-shadow: 0px 2px 2px rgb(0 0 0 / 5%);
+    -ms-box-shadow: 0px 2px 2px rgb(0 0 0 / 5%);
+    -o-box-shadow: 0px 2px 2px rgb(0 0 0 / 5%);
+    box-shadow: 0px 2px 2px rgb(0 0 0 / 5%);
+}
+.content_header h2{
+    font-size: 28.13px;
+    font-weight: 600;
+    color: #000000;
+}
+.content_body{
+    padding: 35px 60px 25px;
+}
+.block_item{
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+.block_item_last{
+    border-bottom: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+.block_head{
+    width: 380px;
+    padding-right: 30px;
+}
+.block_head h3{
+    font-size: 25px;
+    font-weight: 500;
+    color: #111111;
+    letter-spacing: 0.50px;
+}
+.block_head p{
+    color: #111111;
+    font-weight: 300;
+    font-size: 20.83px;
+    margin-top: 10px;
+    line-height: 29.17px;
+}
+.block_body{
+    width: calc(100% - 380px);
+}
+.block_card{
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+}
+.form_group{
+    margin-bottom: 25px;
+}
+.label{
+    font-size: 22.92px;
+    font-weight: 500;
+    color: #2d2d2d;
+    margin-bottom: 10px;
+}
+.btn{
+    margin-left: 25px;
+}
+.form-control,.btn{
+    
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    -ms-box-shadow: none !important;
+    -o-box-shadow: none !important;
+    box-shadow: none !important;
+}
+.form-control{
+    border-radius: 10px;
+    height:45px;
+    font-size: 21px;
+    color: #212121;
+    border: 1px solid #c2c2c2;
+}
+textarea.form-control{
+    resize: none;
+    padding: 15px 20px;
+    height: 45px;
+}
+.btn-blue{
+    min-width: 219px;
+    height: 63px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #1b2855ea;
+    border-radius: 10px;
+    color: #fff !important;
+    font-size: 19.89px;
+    font-weight: 500;
+}
+.btn-blue:hover{
+    background:#011047;
+}
+.btn-o{
+    font-size: 20.83px;
+    font-weight: 500;
+    height: 72px;
+    min-width: 371px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 15px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+}
+.btn-black-o{
+    color: #212121;
+    border-color: #252525;
+}
+.btn-black-o:hover{
+    color: #fff;
+    background: #252525;
+}
+.btn-red-o{
+    color: #d21212;
+    border-color: #d21212;
+}
+.btn-red-o:hover{
+    color: #fff;
+    background: #d21212;
+}
+.author_stats_item{
+    margin-top: 50px;
+}
+.author_stats_outer .row .col-md-6:first-child .author_stats_item,
+.author_stats_outer .row .col-md-6:nth-child(2) .author_stats_item{
+    margin-top: 0px;
+}
+.author_stats_item label{
+    display: block;
+    font-size: 21px;
+    color: #9a9a9a;
+    margin-bottom: 3px;
+}
+.author_stats_item span{
+    display: block;
+    font-size: 22.92px;
+    font-weight: 500;
+    color: #2d2d2d;
+}
+/*------------------ Author Information Page Css End ------------------*/
+/*------------------ Setting Page Start End ------------------*/
+.lectures_item{
+    margin-bottom: 45px;
+}
+.sub_title{
+    font-size: 19.71px;
+    color: #525252;
+    font-weight: 500;
+}
+.lectures_item p{
+    font-size: 17.74px;
+    color: #565656;
+    font-weight: 300;
+    line-height: 27.6px;
+    margin-top: 10px;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 107px;
+    height: 44px;
+    margin-bottom: 0px;
+}
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #949494;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 38px;
+    width: 38px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.slider:after {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    top: 13px;
+    left: 13px;
+    background: url(../images/icon-close.png);
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.switch input:checked + .slider {
+    background-color: #1b2855;
+}
+.switch input:checked + .slider:before {
+    -webkit-transform: translateX(63px);
+    -ms-transform: translateX(63px);
+    transform: translateX(63px);
+}
+.switch input:checked + .slider:after{
+    top: 15px;
+    left: auto;
+    right: 11px;
+    background: url(../images/icon-check.png);
+    background-repeat: no-repeat;
+    background-size: 18px 15px;
+}
+.slider.round {
+    border-radius: 34px;
+}
+.slider.round:before {
+    border-radius: 50%;
+}
+.lectures_item .switch{
+    margin-top: 20px;
+}
+.authors_setting_item{
+    margin-bottom: 45px;
+}
+.authors_setting_item .sub_title{
+    margin-bottom: 25px;
+}
+.mlr-28{
+    margin: 0px -28px;
+}
+.plr-28{
+    padding: 0px 28px;
+}
+.school_status_item p{
+    font-size: 17.8px;
+    color: #565656;
+    font-weight: 300;
+    line-height: 27.68px;
+    margin-top: 13px;
+}
+.school_status_btn{
+    margin-top: 45px;
+}
+.btn-blue-big{
+    height: 73px;
+    min-width: 371px;
+}
+.school_status_btn .btn-black-o{
+    margin-left: 20px;
+}
+/*------------------ Setting Page Css End ------------------*/
+/*------------------ Course Information Page Css Start ------------------*/
+.course_previwe_list ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.course_previwe_list li{
+    margin-left: 24px;
+    background: #fff;
+    width: calc(25% - 18px);
+    margin-top: 24px;
+    border-radius: 10px;
+}
+.preview_item{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px 25px;
+}
+.course_previwe_list li:nth-child(-n + 4){
+    margin-top: 0px;
+}
+.course_previwe_list li:nth-child(4n + 1){
+    margin-left: 0px;
+}
+.preview_img{
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.preview_img img{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+.preview_item span{
+    display: block;
+    padding-top: 5px;
+    font-size: 20.83px;
+    font-weight: 500;
+    color: #1b2855;
+    text-align: center;
+}
+select.form-control{
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    appearance:none;
+    background: url(../images/icon-arrow-down.png) no-repeat center right 20px white;
+}
+.make_author{
+    margin-top: 7px;
+}
+.make_author p{
+    font-size: 19.79px;
+    color: #1d1d1d;
+}
+.make_author p a{
+    color: #1b2855;
+}
+.new_bio_outer{
+    margin-top: 20px;
+}
+.point_list li{
+    position: relative;
+    font-size: 21px;
+    font-weight: 300;
+    color: #565656;
+    margin-bottom: 10px;
+    padding-left: 17px;
+    line-height: 29.17px;
+}
+.point_list li:after{
+    position: absolute;
+    content: "";
+    left: 0px;
+    width: 7px;
+    height: 7px;
+    top: 11px;
+    background: #212121;
+    border-radius: 50%;
+}
+.form_block{
+    position: relative;
+}
+.image_btn_save{
+    position: absolute;
+    right: 0px;
+    top: -8px;
+}
+.image_info {
+    max-width: 290px;
+    margin: 120px 0px auto auto;
+}
+.course_img label{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ececec;
+    min-height: 347px;
+    cursor: pointer;
+    margin-bottom: 0px;
+}
+.course_img img{
+    cursor: pointer;
+}
+.course_img input{
+    opacity: 0;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+}
+.compliance_item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 45px;
+}
+.compliance_icon{
+    width: 32px;
+}
+.compliance_icon img{
+    width: 100%;
+}
+.compliance_info{
+    width: calc(100% - 32px);
+    padding-left: 40px;
+}
+.compliance_info h3{
+    font-size: 22.92px;
+    font-weight: 500;
+    color: #2d2d2d;
+}
+.compliance_info p{
+    font-size: 21px;
+    color: #9a9a9a;
+    margin-top: 5px;
+}
+/*------------------ Course Information Page Css End ------------------*/
+/*------------------ Add Coupan Page Css Start ------------------*/
+.block_coupan_card{
+    padding: 40px;
+}
+.coupan_head{
+    position: relative;
+    text-align: center;
+}
+.coupan_head .back{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+.coupan_head_text{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.coupan_head_text h3{
+    font-size: 26.95px;
+    font-weight: 500;
+    color: #121212;
+}
+.coupan_head_text img{
+    margin-left: 10px;
+    margin-top: 7px;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+.coupan_head_text.active img{
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+}
+.coupan_body{
+    max-width: 745px;
+    margin: auto;
+}
+.coupan_inner{
+    margin-top: 45px;
+}
+.coupan_amount{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.coupan_img{
+    width: 121px;
+    padding-right: 15px;
+}
+.coupan_img img{
+    width: 100%;
+}
+.coupan_input{
+    width: calc(100% - 121px);
+    display: flex;
+    border: 1px solid #c2c2c2;
+    border-radius: 4px;
+}
+.coupan_input label{
+    margin-bottom: 0px;
+    font-size: 21px;
+    font-weight: 600;
+    color: #2b2b2b;
+    height: 73px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 30px;
+    border-right: 1px solid #c2c2c2;
+}
+.coupan_input .form-control{
+    border-radius: 0px 10px 10px 0px !important;
+    border: 0px !important;
+    padding: 0px 30px;
+}
+.coupan_plan_price span{
+    font-size: 21px;
+    color: #9a9a9a;
+    display: block;
+}
+.coupan_plan_price p{
+    font-size: 22.92px;
+    color: #2d2d2d;
+    font-weight: 500;
+}
+.coupan_plan_price{
+    margin-bottom: 55px;
+}
+.mb-40{
+    margin-bottom: 40px !important;
+}
+/*------------------ Add Coupan Page Css End ------------------*/
+/*------------------ Coupan Listing Page Css Start ------------------*/
+.coupan_list_body{
+    max-width: 100%;
+}
+.coupan_list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.coupan_item{
+    margin-top: 20px;
+    width: 50%;
+    text-align: center;
+    padding: 0px 30px;
+    position: relative;
+}
+.coupan_item:nth-child(1):after{
+    position: absolute;
+    content: "or";
+    right: 0px;
+    top: 140px;
+    font-size: 25px;
+    font-weight: 300;
+    color: #515151;
+}
+.coupan_item_img{
+    height: 249px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.coupan_item_img img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.coupan_item_info{
+    padding: 0px 75px 20px;
+}
+.coupan_item h3{
+    margin-top: 15px;
+    font-size: 25px;
+    font-weight: 500;
+    color: #111111;
+}
+.coupan_item p{
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 29.17px;
+    margin-top: 10px;
+}
+.mt-30{
+    margin-top: 30px;
+}
+.custom_table{
+    margin-bottom: 0px;
+}
+.custom_table th{
+    font-size: 20.78px;
+    font-weight: 600;
+    color: #2d2d2d;
+    border-bottom: 0px !important;
+    padding: 20px 25px;
+}
+.custom_table td{
+    padding: 20px 25px;
+    font-size: 20.97px;
+    font-weight: 500;
+    color: #919191;
+}
+.preview_coupan{
+    color: #1b2855;
+}
+.preview_coupan:hover{
+    color: #111;
+}
+.delete{
+    margin: 0px 5px 0px 30px;
+}
+.coupan_type{
+    width: 217px;
+}
+.action{
+    width: 78px;
+}
+.table_pag_outer{
+    padding: 25px 30px 30px 0px;
+}
+.table_pagination{
+    display: inline-flex;
+    align-items: center;
+    font-size: 20.97px;
+    color: #bcbcbc;
+    font-weight: 500;
+}
+.table_pagination p{
+    margin-right: 10px;
+}
+.table_pagination a{
+    height: 31px;
+    width: 31px;
+    background: #e1e1e1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #9c9c9c;
+    margin-left: 12px;
+}
+.table_pagination a:hover{
+    color: #fff;
+    background: #1b2855;
+}
+.table_pagination a i{
+    font-size: 20.97px;
+    font-weight: 600;
+}
+/*------------------ Coupan Listing Page Css End ------------------*/
+/*------------------ Pricing Listing Page Css Start ------------------*/
+.btn-head{
+    width: 304px;
+    height: 69px;
+    border-radius: 9px;
+    font-size: 20.83px;
+}
+.w-300{
+    width: 300px;
+}
+.paymentplan .modal-dialog {
+    max-width: 1500px;
+}
+.paymentplan .modal-content {
+    border-radius: 10px;
+}
+.paymentplan .modal-body{
+    padding: 75px 35px;
+}
+.popup_back {
+    position: absolute;
+    left: 35px;
+    top: 35px;
+}
+.popup_back a{
+    display: inline-flex;
+    align-items: center;
+    font-size: 25px;
+    color: #767676;
+    font-weight: 500;
+}
+.popup_back a:hover{
+    color: #111;
+}
+.modal_head{
+    text-align: center;
+}
+.popup_back i {
+    font-size: 50px;
+    line-height: 30px;
+    margin-top: -6px;
+    font-weight: 600;
+    margin-right: 15px;
+}
+.modal_head h3{
+    font-size: 37.5px;
+    font-weight: 600;
+    color: #292929;
+}
+.close_popup{
+    position: absolute;
+    right: 35px;
+    top: 35px;
+    border: 2px solid #bababa;
+    height: 47px;
+    width: 47px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #bababa;
+    border-radius: 50%;
+    cursor: pointer;
+    padding-bottom: 2px;
+}
+.close_popup i{
+    font-size: 25px;
+}
+.modal_content{
+    margin-top: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.modal_form{
+    width: calc(100% - 590px);
+}
+.modal_group{
+    margin-bottom: 35px;
+}
+.modal_group .modal_label{
+    font-size: 27.08px;
+    font-weight: 500;
+    color: #2d2d2d;
+    margin-bottom: 10px;
+}
+.modal_input select{
+    width: 160px !important;
+}
+.modal_input input[type='text']{
+    width: calc(100% - 180px) !important;
+}
+#description .fr-view *{
+    font-family: 'Poppins' !important;
+    font-size: 21px;
+}
+.fr-toolbar.fr-top {
+    border-radius: 10px 10px 0px 0px;
+    border-color: #c2c2c2;
+}
+.fr-box.fr-basic .fr-wrapper {
+    border: 1px solid #c2c2c2;
+    border-bottom-color: #c2c2c2;
+    border-radius: 0px 0px 10px 10px;
+}
+.fr-box.fr-basic .fr-element {
+    min-height: 245px;
+}
+.chk {
+	display: block;
+	position: relative;
+	padding-left: 55px;
+	margin-bottom: 0px;
+    line-height: 35px;
+	cursor: pointer;
+	font-size: 22.92px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.chk input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+.chk .checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 35px;
+	width: 35px;
+	border: 1px solid #a1a1a1;
+    border-radius: 5px;
+}
+.chk .checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+.chk input:checked~.checkmark:after {
+	display: block;
+}
+.chk .checkmark:after {
+	left: 12px;
+    top: 6px;
+    width: 8px;
+    height: 16px;
+	border: solid #a1a1a1;
+	border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+.modal_info{
+    width: 550px;
+    background: #f4f4f4;
+    padding: 35px 40px;
+    border-radius: 10px;
+}
+.modal_item{
+    margin-top: 45px;
+}
+.modal_item:first-child{
+    margin-top: 0px;
+}
+.modal_item h3{
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    font-size: 25px;
+    color:#011047;
+    font-weight: 600;
+}
+.modal_item h3 i{
+    font-weight: 600;
+    padding-left: 10px;
+    font-size: 35px;
+    line-height: 25px;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+.modal_item.active h3 i{
+    transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+}
+.modal_item ul li{
+    font-size: 20.83px;
+    font-weight: 600;
+    color: #515151;
+    margin-top: 10px;
+}
+.modal_item p{
+    margin-top: 10px;
+    font-size: 20.83px;
+    font-weight: 300;
+    line-height: 45px;
+    color: #515151;
+}
+.modal_btn{
+    text-align: right;
+    margin-right: -55px;
+}
+.btn-black{
+    background: #8d8d8d;
+    color: #fff;
+    min-width: 333px;
+    height: 85px;
+    font-size: 26.83px;
+}
+.plan_type .modal-dialog {
+    max-width: 1200px;
+}
+.plan_type .modal-content {
+    border-radius: 10px;
+}
+.plan_type .modal-body{
+    padding: 35px 85px;
+}
+.plan_type .close_popup {
+    right: 25px;
+    top: 25px;
+}
+.plan_type_outer ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.plan_type_outer li{
+    border-left: 1px solid rgba(209,209,209,0.57);
+    border-top: 1px solid rgba(209,209,209,0.57);
+    width: 50%;
+    text-align: center;
+    padding: 40px 30px;
+}
+.plan_type_outer li:nth-child(2n + 1){
+    border-left: 0px;
+}
+.plan_type_outer li:nth-child(1),
+.plan_type_outer li:nth-child(2){
+    border-top: 0px;
+}
+.plan_type_img{
+    height: 175px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.plan_type_img img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.plan_type_info{
+    margin-top: 10px;
+    padding: 10px 0px 0px;
+}
+.plan_type_info h3{
+    font-size: 29.17px;
+    font-weight: 600;
+    color: #292929;
+}
+.plan_type_info p{
+    font-size: 25px;
+    color: #515151;
+    font-weight: 300;
+    line-height: 40px;
+    margin-top: 10px;
+}
+.toggleMenu{
+    position: absolute;
+    left: 15px;
+    display: none;
+}
+.toggleMenu span {
+    width: 21px;
+    height: 2px;
+    display: flex;
+    background-color: #fff;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+.toggleMenu.active .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 4px);
+    transform: rotate(-45deg) translate(-6px, 4px);
+}
+.toggleMenu.active .bar2 {
+    opacity: 0;
+}
+.toggleMenu.active .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -4px);
+    transform: rotate(45deg) translate(-6px, -4px);
+}
+.menu_icon_mobile {
+    display: none;
+    align-items: center;
+    cursor: pointer;
+}
+.menu_icon_mobile i{
+    margin-left: 4px;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 600;
+}
+/*------------------ Pricing Listing Page Css End ------------------*/
+.header_menu_outer{
+    justify-content: flex-start;
+}
+.header_menu{
+    position: relative;
+    margin-left: 60px;
+    padding-left: 60px;
+}
+.header_menu:after{
+    position: absolute;
+    content: "";
+    left: 0px;
+    top: -33px;
+    height: calc(100% + 66px);
+    width: 1px;
+    background:rgba(0,0,0,0.36);
+}
+.header_menu ul{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.header_menu li{
+    margin-right: 60px;
+}
+.header_menu li:last-child{
+    margin-right: 0px;
+}
+.header_menu li a{
+    font-size: 15px;
+    color: #111111;
+    display: block;
+    position: relative;
+}
+.header_menu li a:after{
+    position: absolute;
+    content: "";
+    left: 0px;
+    bottom: -32px;
+    width: 100%;
+    height: 5px;
+    background: transparent;
+}
+.header_menu li.active a{
+    color: #1b2855;
+    font-weight: 600;
+}
+.header_menu li.active a:after{
+    background: #1b2855;
+}
+
+@media(min-width:1200px){
+    /*------------------ Author Information Page Css Start ------------------*/
+    header {
+        padding: 0px 20px;
+    }
+    .header_inner {
+        min-height: 60px;
+    }
+    .logo h1 {
+        font-size: 18px;
+    }
+    .header_user > a {
+        font-size: 16px;
+    }
+    .header_user > a > img {
+        height: 35px;
+        width: 35px;
+        margin-left: 12px;
+    }
+    .sidebar {
+        padding-top: 10px;
+        top: 60px;
+        width: 250px;
+        height: calc(100vh - 60px);
+    }
+    .menu > ul > li > a {
+        min-height: 55px;
+        padding: 5px 20px;
+        font-size: 16px;
+    }
+    .menu_icon {
+        width: 25px;
+        margin-right: 10px;
+    }
+    .menu_icon img {
+        max-height: 20px;
+    }
+    .submenu {
+        padding-left: 60px;
+    }
+    .submenu_icon img {
+        max-height: 18px;
+    }
+    
+    .submenu a {
+       
+        padding: 4px 10px;
+    }
+    .content_header {
+        min-height: 60px;
+        padding: 5px 20px;
+        top: 60px;
+        left: 250px;
+        width: calc(100% - 250px);
+    }
+    .content_header h2 {
+        font-size: 18px;
+    }
+    .content {
+        padding: 120px 0px 0px 250px;
+    }
+    .content_body {
+        padding: 25px 20px 20px;
+    }
+    .block_head {
+        width: 290px;
+        padding-right: 20px;
+    }
+    .block_body {
+        width: calc(100% - 290px);
+    }
+    .block_head h3 {
+        font-size: 17px;
+    }
+    .block_head p {
+        font-size: 15px;
+        margin-top: 6px;
+        line-height: 24px;
+    }
+    .block_card {
+        padding: 25px;
+    }
+    .label {
+        font-size: 15px;
+        margin-bottom: 7px;
+    }
+    .form-control {
+        height: 45px;
+        font-size: 14px;
+    }
+    textarea.form-control {
+        height: 70px;
+    }
+    .form_group {
+        margin-bottom: 20px;
+    }
+    .btn-blue {
+        min-width: 150px;
+        height: 45px;
+        font-size: 15px;
+        font-weight: 500;
+    }
+    .author_stats_item label {
+        font-size: 15px;
+    }
+    .author_stats_item span {
+        font-size: 15px;
+    }
+    .author_stats_item {
+        margin-top: 30px;
+    }
+    .btn-o {
+	font-size: 15px;
+	height: 45px;
+	min-width: 250px;
+	}
+    /*------------------ Author Information Page Css End ------------------*/
+    /*------------------ Setting Page Start Start ------------------*/
+    .sub_title {
+        font-size: 17px;
+    }
+    .lectures_item p {
+        font-size: 15px;
+        line-height: 25px;
+        margin-top: 7px;
+    }
+    .lectures_item {
+        margin-bottom: 30px;
+    }
+    .authors_setting_item {
+        margin-bottom: 30px;
+    }
+    .school_status_item p {
+        font-size: 15px;
+        line-height: 24px;
+        margin-top: 9px;
+    }
+    .school_status_btn .btn-black-o {
+        margin-left: 20px;
+        height: 50px;
+    }
+    .switch {
+        width: 82px;
+        height: 36px;
+    }
+    .slider:before {
+        height: 31px;
+        width: 31px;
+    }
+    .slider:after {
+        height: 15px;
+        width: 15px;
+        top: 11px;
+        left: 11px;
+        background-size: 14px 14px;
+    }
+    .switch input:checked + .slider:before {
+        -webkit-transform: translateX(44px);
+        -ms-transform: translateX(44px);
+        transform: translateX(44px);
+    }
+    .switch input:checked + .slider:after {
+        top: 12px;
+        left: auto;
+        right: 11px;
+        background-size: 15px 12px;
+    }
+    .mlr-28 {
+        margin: 0px -10px;
+    }
+    .plr-28 {
+        padding: 0px 10px;
+    }
+    /*------------------ Setting Page Start End ------------------*/
+    /*------------------ Course Information Page Css Start ------------------*/
+    .course_previwe_list li {
+        margin-left: 15px !important;
+        width: calc(50% - 8px);
+        margin-top: 20px !important;
+    }
+    .course_previwe_list li:nth-child(2n + 1){
+        margin-left: 0px !important;
+    }
+    .course_previwe_list li:nth-child(-n + 2) {
+        margin-top: 0px !important;
+    }
+    .preview_img {
+        height: 110px;
+    }
+    .preview_item span {
+        font-size: 16px;
+    }
+    select.form-control {
+        background: url(../images/icon-arrow-down.png) no-repeat center right 15px white;
+        background-size: 15px;
+    }
+    .make_author p {
+        font-size: 15px;
+    }
+    .course_img label {
+        min-height: 225px;
+    }
+    .image_info {
+        margin: 70px 0px auto auto;
+    }
+    .point_list li {
+        font-size: 15px;
+        margin-bottom: 7px;
+        padding-left: 14px;
+        line-height: 21.17px;
+    }
+    .point_list li:after {
+        top: 8px;
+    }
+    .compliance_icon {
+        width: 17px;
+    }
+    .compliance_info {
+        width: calc(100% - 18px);
+        padding-left: 20px;
+    }
+    .compliance_info h3 {
+        font-size: 18px;
+    }
+    .compliance_info p {
+        font-size: 15px;
+    }
+    .compliance_item {
+        margin-bottom: 25px;
+    }
+    /*------------------ Course Information Page Css End ------------------*/
+    /*------------------ Add Coupan Page Css Start ------------------*/
+    .back img{
+        width: 11px;
+    }
+    .coupan_head_text h3 {
+        font-size: 21px;
+    }
+    .coupan_head_text img {
+        margin-left: 8px;
+        margin-top: 5px;
+        width: 18px;
+    }
+    .coupan_inner {
+        margin-top: 30px;
+    }
+    .coupan_img {
+        width: 105px;
+    }
+    .coupan_input label {
+        font-size: 16px;
+        height: 50px;
+        padding: 0px 20px;
+    }
+    .coupan_input {
+        width: calc(100% - 105px);
+    }
+    .coupan_amount {
+        margin-bottom: 25px;
+    }
+    .coupan_plan_price span {
+        font-size: 17px;
+    }
+    .coupan_plan_price p {
+        font-size: 18.92px;
+    }
+    .coupan_plan_price {
+        margin-bottom: 30px;
+    }
+    .mb-40 {
+        margin-bottom: 30px !important;
+    }
+    /*------------------ Add Coupan Page Css End ------------------*/
+    /*------------------ Coupan Listing Page Css Start ------------------*/
+    .custom_table th {
+        font-size: 14px;
+        padding: 10px;
+    }
+    .custom_table td {
+        padding:10px;
+        font-size: 14px;
+    }
+    .coupan_type {
+        width: 135px;
+    }
+    .delete {
+        margin: 0px 5px 0px 13px;
+    }
+    .action {
+        width: 65px;
+    }
+    .table_pagination {
+        font-size: 16px;
+    }
+    .table_pag_outer {
+        padding: 20px 20px 20px 0px;
+    }
+    .table_pagination a i {
+        font-size: 18.97px;
+    }
+    .table_pagination a {
+        height: 27px;
+        width: 27px;
+        margin-left: 8px;
+    }
+    .coupan_item_img img {
+        max-width: 200px;
+    }
+    .coupan_item_img {
+        height: 180px;
+    }
+    .coupan_item:nth-child(1):after {
+        right: -19px;
+        top: 110px;
+        font-size: 22px;
+    }
+    .coupan_item_info {
+        padding: 0px 20px 10px;
+    }
+    .coupan_item h3 {
+        font-size: 17px;
+    }
+    .coupan_item p {
+        font-size: 15px;
+        line-height: 22px;
+    }
+    /*------------------ Coupan Listing Page Css End ------------------*/
+    /*------------------ Pricing Listing Page Css Start ------------------*/
+    .btn-head {
+        width: 170px;
+        height: 40px !important;
+        font-size: 15px !important;
+        min-width: initial !important;
+    }
+    .w-300 {
+        width: 170px;
+    }
+    .paymentplan .modal-body {
+        padding: 23px 25px 25px;
+    }
+    .popup_back {
+        left: 25px;
+        top: 25px;
+    }
+    .popup_back a {
+        font-size: 16px;
+    }
+    .popup_back i {
+        font-size: 30px;
+        line-height: 26px;
+        margin-top: -6px;
+        margin-right: 10px;
+    }
+    .close_popup {
+        right: 25px;
+        top: 15px;
+        height: 33px;
+        width: 33px;
+    }
+    .close_popup i {
+        font-size: 19px;
+    }
+    .modal_head h3 {
+        font-size: 24px;
+    }
+    .modal_content {
+        margin-top: 20px;
+    }
+    .modal_form {
+        width: calc(100% - 330px);
+    }
+    .modal_group {
+        margin-bottom: 15px;
+    }
+    .modal_group .modal_label {
+        font-size: 15px;
+        margin-bottom: 6px;
+    }
+    .modal_input select {
+        width: 90px !important;
+    }
+    .modal_input input[type='text'] {
+        width: calc(100% - 100px) !important;
+    }
+    .fr-box.fr-basic .fr-element {
+        min-height: 160px;
+    }
+    #description .fr-view * {
+        font-size: 15px;
+    }
+    .fr-toolbar .fr-command.fr-btn, .fr-popup .fr-command.fr-btn, .fr-modal .fr-command.fr-btn {
+        height: 25px;
+    }
+    .fr-toolbar .fr-command.fr-btn svg.fr-svg, .fr-popup .fr-command.fr-btn svg.fr-svg, .fr-modal .fr-command.fr-btn svg.fr-svg {
+        height: 20px;
+    }
+    .chk .checkmark {
+        height: 28px;
+        width: 28px;
+    }
+    .chk .checkmark:after {
+        left: 9px;
+        top: 5px;
+        width: 7px;
+        height: 13px;
+    }
+    .chk {
+        padding-left: 40px;
+        margin-bottom: 0px;
+        line-height: 24px;
+        font-size: 15px;
+    }
+    .modal_btn {
+        margin-right: 0px;
+    }
+    .modal_info {
+        width: 300px;
+        padding: 15px;
+        margin-top: 20px;
+    }
+    .modal_item {
+        margin-top: 25px;
+    }
+    .modal_item h3 {
+        font-size: 17px;
+    }
+    .modal_item ul li {
+        font-size: 15px;
+        margin-top: 8px;
+    }
+    .modal_item h3 i {
+        padding-left: 8px;
+        font-size: 25px;
+    }
+    .modal_item p {
+        margin-top: 7px;
+        font-size: 15px;
+        line-height: 26px;
+    }
+    .paymentplan .modal-dialog,.plan_type .modal-dialog{
+        max-width: 900px;
+    }
+    .plan_type .modal-body {
+        padding: 30px 50px;
+    }
+    .plan_type .close_popup {
+        right: 25px;
+        top: 15px;
+    }
+    .plan_type_img {
+        height: 130px;
+    }
+    .plan_type_outer li {
+        padding: 25px;
+    }
+    .plan_type_info h3 {
+        font-size: 17px;
+    }
+    .plan_type_info p {
+        font-size: 15px;
+        line-height: 29px;
+    }
+    /*------------------ Pricing Listing Page Css End ------------------*/
+    .header_menu li a {
+        font-size: 15px;
+    }
+    .header_menu {
+        margin-left: 40px;
+        padding-left: 40px;
+    }
+    .header_menu li a:after {
+        bottom: -17px;
+        height: 4px;
+    }
+    .header_menu:after {
+        top: -18px;
+        height: calc(100% + 36px);
+    }
+}
+@media(min-width:992px) and (max-width:1199px){
+    /*------------------ Author Information Page Css Start ------------------*/
+    header {
+        padding: 0px 15px;
+    }
+    .logo h1 {
+        font-size: 18px;
+    }
+    .header_inner {
+        min-height: 60px;
+    }
+    .header_user > a {
+        font-size: 17px;
+    }
+    .header_user > a > img {
+        height: 34px;
+        width: 34px;
+        margin-left: 10px;
+    }
+    .sidebar {
+        padding-top: 10px;
+        top: 60px;
+        width: 240px;
+        height: calc(100vh - 60px);
+    }
+    .menu > ul > li > a {
+        min-height: 50px;
+        padding: 5px 15px;
+        font-size: 15px;
+    }
+    .menu_icon {
+        width: 25px;
+        margin-right: 15px;
+    }
+    .submenu {
+        padding-left: 40px;
+    }
+    .submenu a {
+        
+        padding: 6px 10px;
+    }
+    .content_header {
+        min-height: 60px;
+        padding: 5px 15px;
+        top: 60px;
+        left: 240px;
+        width: calc(100% - 240px);
+    }
+    .content_header h2 {
+        font-size: 18px;
+    }
+    .content {
+        padding: 120px 0px 0px 240px;
+    }
+    .content_body {
+        padding: 20px 15px;
+    }
+    .block_head {
+        width: 240px;
+        padding-right: 15px;
+    }
+    .block_head h3 {
+        font-size: 20px;
+    }
+    .block_head p {
+        font-size: 15px;
+        margin-top: 5px;
+        line-height: 22.17px;
+    }
+    .block_body {
+        width: calc(100% - 240px);
+    }
+    .block_card {
+        padding: 20px;
+    }
+    .label {
+        font-size: 15px;
+        margin-bottom: 6px;
+    }
+    .form-control {
+        border-radius: 7px;
+        height: 45px;
+        font-size: 15px;
+        padding: 0px 15px;
+    }
+    textarea.form-control {
+        padding: 10px 15px;
+        height: 72px;
+    }
+    .btn-blue {
+        min-width: 170px;
+        height: 45px;
+        border-radius: 7px;
+        font-size: 15px;
+    }
+    .form_group {
+        margin-bottom: 15px;
+    }
+    .author_stats_item label {
+        font-size: 16px;
+    }
+    .author_stats_item span {
+        font-size: 15px;
+    }
+    .author_stats_item {
+        margin-top: 20px;
+    }
+    .btn-o {
+        font-size: 15px;
+        height: 45px;
+        min-width: 270px;
+        padding: 0px 15px;
+        border-radius: 7px;
+    }
+    /*------------------ Author Information Page Css End ------------------*/
+    /*------------------ Setting Page Start Start ------------------*/
+    .sub_title {
+        font-size: 15px;
+    }
+    .lectures_item p {
+        font-size: 15px;
+        line-height: 24px;
+        margin-top: 7px;
+    }
+    .lectures_item {
+        margin-bottom: 30px;
+    }
+    .authors_setting_item .sub_title {
+        margin-bottom: 17px;
+    }
+    .authors_setting_item {
+        margin-bottom: 30px;
+    }
+    .school_status_item p {
+        font-size: 15px;
+        line-height: 24px;
+        margin-top: 13px;
+    }
+    .school_status_btn {
+        margin-top: 25px;
+    } 
+    .school_status_btn .btn-black-o {
+        margin-left: 12px;
+        font-size: 14px;
+        min-width: 99px;
+        height: 45px;
+    }   
+    .switch {
+        width: 82px;
+        height: 36px;
+    }
+    .slider:before {
+        height: 31px;
+        width: 31px;
+    }
+    .slider:after {
+        height: 15px;
+        width: 15px;
+        top: 11px;
+        left: 11px;
+        background-size: 14px 14px;
+    }
+    .switch input:checked + .slider:before {
+        -webkit-transform: translateX(44px);
+        -ms-transform: translateX(44px);
+        transform: translateX(44px);
+    }
+    .switch input:checked + .slider:after {
+        top: 12px;
+        left: auto;
+        right: 11px;
+        background-size: 15px 12px;
+    }
+    .mlr-28 {
+        margin: 0px -10px;
+    }
+    .plr-28 {
+        padding: 0px 10px;
+    }
+    /*------------------ Setting Page Start End ------------------*/
+    /*------------------ Course Information Page Css Start ------------------*/
+    .course_previwe_list li {
+        margin-left: 15px !important;
+        width: calc(50% - 8px);
+        margin-top: 20px !important;
+    }
+    .course_previwe_list li:nth-child(2n + 1){
+        margin-left: 0px !important;
+    }
+    .course_previwe_list li:nth-child(-n + 2) {
+        margin-top: 0px !important;
+    }
+    .preview_img {
+        height: 110px;
+    }
+    .preview_item span {
+        font-size: 15px;
+    }
+    select.form-control {
+        background: url(../images/icon-arrow-down.png) no-repeat center right 15px white;
+        background-size: 15px;
+    }
+    .make_author p {
+        font-size: 15px;
+    }
+    .image_btn_save .btn {
+        min-width: 130px;
+    }
+    .course_img label {
+        min-height: 225px;
+    }
+    .image_info {
+        margin: 70px 0px auto auto;
+    }
+    .point_list li {
+        font-size: 15px;
+        margin-bottom: 7px;
+        padding-left: 14px;
+        line-height: 21.17px;
+    }
+    .point_list li:after {
+        top: 8px;
+    }
+    .compliance_icon {
+        width: 17px;
+    }
+    .compliance_info {
+        width: calc(100% - 18px);
+        padding-left: 20px;
+    }
+    .compliance_info h3 {
+        font-size: 17px;
+    }
+    .compliance_info p {
+        font-size: 15px;
+    }
+    .compliance_item {
+        margin-bottom: 25px;
+    }
+    /*------------------ Course Information Page Css End ------------------*/
+    /*------------------ Add Coupan Page Css Start ------------------*/
+    .back img{
+        width: 10px;
+    }
+    .coupan_head_text h3 {
+        font-size: 20px;
+    }
+    .coupan_head_text img {
+        margin-left: 8px;
+        margin-top: 5px;
+        width: 15px;
+    }
+    .coupan_inner {
+        margin-top: 20px;
+    }
+    .coupan_img {
+        width: 90px;
+    }
+    .coupan_input {
+        width: calc(100% - 90px);
+    }
+    .coupan_input label {
+        font-size: 16px;
+        height: 45px;
+        padding: 0px 20px;
+    }
+    .coupan_amount {
+        margin-bottom: 25px;
+    }
+    .coupan_plan_price {
+        margin-bottom: 25px;
+    }
+    .coupan_plan_price span {
+        font-size: 16px;
+    }
+    .coupan_plan_price p {
+        font-size: 16px;
+    }
+    .mb-40 {
+        margin-bottom: 20px !important;
+    }
+    /*------------------ Add Coupan Page Css End ------------------*/
+    /*------------------ Coupan Listing Page Css Start ------------------*/
+    .coupan_item {
+        padding: 0px 20px;
+    }
+    .coupan_item_img {
+        height: 135px;
+    }
+    .custom_table {
+        border: 0;
+    }
+    .coupan_item_info {
+        padding: 0px 28px 16px;
+    }
+    .coupan_item:nth-child(1):after {
+        right: -15px;
+        top: 91px;
+        font-size: 18px;
+    }
+    .coupan_item h3 {
+        font-size: 19px;
+    }
+    .coupan_item p {
+        font-size: 16px;
+        line-height: 27.17px;
+    }
+    .custom_table thead {
+        border: none;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+    .custom_table tr {
+        border-bottom: 1px solid #ddd;
+        display: block;
+        margin-bottom: .625em;
+    }
+    .custom_table td {
+        border-bottom: 0px;
+        display: block;
+        font-size: 15px;
+        text-align: right;
+        padding: 10px 25px;
+    }
+    .custom_table td::before {
+        content: attr(data-label);
+        float: left;
+        font-weight: 500;
+        color: #222;
+    }
+    .custom_table td:last-child {
+        border-bottom: 0;
+    }
+    .action {
+        width: 100%;
+    }
+    .delete {
+        margin: 0px 5px 0px 15px;
+    }
+    .table_pag_outer {
+        padding: 15px 15px 15px 0px;
+    }
+    .table_pagination {
+        font-size: 16px;
+    }
+    .table_pagination a {
+        height: 28px;
+        width: 28px;
+        margin-left: 9px;
+    }
+    /*------------------ Coupan Listing Page Css End ------------------*/
+    /*------------------ Pricing Listing Page Css Start ------------------*/
+    .btn-head {
+        width: 160px;
+        height: 40px !important;
+        font-size: 14px !important;
+        min-width: initial !important;
+    }
+    .paymentplan .modal-body {
+        padding: 23px 25px 25px;
+    }
+    .popup_back {
+        left: 25px;
+        top: 25px;
+    }
+    .popup_back a {
+        font-size: 16px;
+    }
+    .popup_back i {
+        font-size: 30px;
+        line-height: 26px;
+        margin-top: -6px;
+        margin-right: 10px;
+    }
+    .close_popup {
+        right: 25px;
+        top: 15px;
+        height: 33px;
+        width: 33px;
+    }
+    .close_popup i {
+        font-size: 19px;
+    }
+    .modal_head h3 {
+        font-size: 24px;
+    }
+    .modal_content {
+        margin-top: 20px;
+    }
+    .modal_form {
+        width: calc(100% - 330px);
+    }
+    .modal_group {
+        margin-bottom: 15px;
+    }
+    .modal_group .modal_label {
+        font-size: 15px;
+        margin-bottom: 6px;
+    }
+    .modal_input select {
+        width: 90px !important;
+    }
+    .modal_input input[type='text'] {
+        width: calc(100% - 100px) !important;
+    }
+    .fr-box.fr-basic .fr-element {
+        min-height: 160px;
+    }
+    #description .fr-view * {
+        font-size: 15px;
+    }
+    .fr-toolbar .fr-command.fr-btn, .fr-popup .fr-command.fr-btn, .fr-modal .fr-command.fr-btn {
+        height: 25px;
+    }
+    .fr-toolbar .fr-command.fr-btn svg.fr-svg, .fr-popup .fr-command.fr-btn svg.fr-svg, .fr-modal .fr-command.fr-btn svg.fr-svg {
+        height: 20px;
+    }
+    .chk .checkmark {
+        height: 28px;
+        width: 28px;
+    }
+    .chk .checkmark:after {
+        left: 9px;
+        top: 5px;
+        width: 7px;
+        height: 13px;
+    }
+    .chk {
+        padding-left: 40px;
+        margin-bottom: 0px;
+        line-height: 24px;
+        font-size: 15px;
+    }
+    .modal_btn {
+        margin-right: 0px;
+    }
+    .modal_info {
+        width: 300px;
+        padding: 15px;
+        margin-top: 20px;
+    }
+    .modal_item {
+        margin-top: 25px;
+    }
+    .modal_item h3 {
+        font-size: 17px;
+    }
+    .modal_item ul li {
+        font-size: 15px;
+        margin-top: 8px;
+    }
+    .modal_item h3 i {
+        padding-left: 8px;
+        font-size: 25px;
+    }
+    .modal_item p {
+        margin-top: 7px;
+        font-size: 15px;
+        line-height: 26px;
+    }
+    .paymentplan .modal-dialog,.plan_type .modal-dialog{
+        max-width: 900px;
+    }
+    .plan_type .modal-body {
+        padding: 30px 50px;
+    }
+    .plan_type .close_popup {
+        right: 25px;
+        top: 15px;
+    }
+    .plan_type_img {
+        height: 130px;
+    }
+    .plan_type_outer li {
+        padding: 25px;
+    }
+    .plan_type_info h3 {
+        font-size: 18.17px;
+    }
+    .plan_type_info p {
+        font-size: 17px;
+        line-height: 29px;
+    }
+    /*------------------ Pricing Listing Page Css End ------------------*/
+    .header_menu {
+        margin-left: 30px;
+        padding-left: 30px;
+    }
+    .header_menu li a {
+        font-size: 15px;
+    }
+    .header_menu li {
+        margin-right: 35px;
+    }
+    .header_menu:after {
+        top: -19px;
+        height: calc(100% + 38px);
+    }
+    .header_menu li a:after {
+        bottom: -19px;
+        height: 3px;
+    }
+}
+@media(min-width:768px) and (max-width:991px){
+    /*------------------ Author Information Page Css Start ------------------*/
+    body {
+        font-size: 15px;
+    }
+    body.active{
+        overflow: hidden;
+    }
+    header {
+        padding: 0px 15px;
+    }
+    .header_inner {
+        min-height: 50px;
+    }
+    .logo h1 {
+        font-size: 17px;
+    }
+    .header_user span{
+        display: none;
+    }
+    .header_user > a > img {
+        height: 27px;
+        width: 27px;
+        margin-left: 0px;
+    }
+    .content {
+        padding: 50px 0px 0px 0px;
+    }
+    .content_header {
+        min-height: 45px;
+        padding: 5px 15px;
+        position: relative;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        z-index: 5;
+    }
+    .content_header h2 {
+        font-size: 16px;
+    }
+    .content_body {
+        padding: 25px 15px;
+    }
+    .block_item {
+        padding-bottom: 25px;
+        margin-bottom: 25px;
+    }
+    .block_head {
+        width: 100%;
+        padding-right: 0px;
+    }
+    .block_head h3 {
+        font-size: 18px;
+    }
+    .block_head p {
+        font-size: 15px;
+        margin-top: 5px;
+        line-height: 24px;
+    }
+    .block_body {
+        width: 100%;
+        margin-top: 10px;
+    }
+    .block_card {
+        padding: 15px;
+        border-radius: 7px;
+    }
+    .label {
+        font-size: 15px;
+        margin-bottom: 6px;
+    }
+    .form-control {
+        border-radius: 7px;
+        height: 45px;
+        font-size: 16px;
+        padding: 0px 15px;
+    }
+    .btn-blue {
+        min-width: 170px;
+        height: 45px;
+        border-radius: 7px;
+        font-size: 16px;
+    }
+    .form_group {
+        margin-bottom: 15px;
+    }
+    .author_stats_item label {
+        font-size: 15px;
+    }
+    .author_stats_item span {
+        font-size: 15px;
+    }
+    .author_stats_outer .row .col-md-6:nth-child(2) .author_stats_item {
+        margin-top: 20px;
+    }
+    .author_stats_item {
+        margin-top: 20px;
+    }
+    .btn-o {
+        font-size: 15px;
+        height: 45px;
+        min-width: 100%;
+        border-radius: 7px;
+    }
+    .block_item_last {
+        padding-bottom: 0px !important;
+        margin-bottom: 0px !important;
+    }
+    .toggleMenu{
+        display: block;
+    }
+    .logo {
+        margin-left: 35px;
+    }
+    .sidebar {
+        padding-top: 5px;
+        top: 50px;
+        width: 100%;
+        left: -100%;
+        height: calc(100vh - 50px);
+        z-index: 6;
+        -webkit-transition: all 0.3s linear;
+        -moz-transition: all 0.3s linear;
+        -ms-transition: all 0.3s linear;
+        -o-transition: all 0.3s linear;
+        transition: all 0.3s linear;
+    }
+    .sidebar.active{
+        left: 0px;
+    }
+    .menu > ul > li > a {
+        min-height: 50px;
+        padding: 5px 15px;
+        font-size: 16px;
+    }
+    .menu_icon {
+        width: 25px;
+        margin-right: 15px;
+    }
+    .submenu {
+        padding-left: 40px;
+    }
+    .submenu a {
+        
+        color: #a9eaff;
+        padding: 6px 15px;
+    }
+    /*------------------ Author Information Page Css End ------------------*/
+    /*------------------ Setting Page Start Start ------------------*/
+    .lectures_item {
+        margin-bottom: 30px;
+    }
+    .sub_title {
+        font-size: 15px;
+    }
+    .lectures_item p {
+        font-size: 15px;
+           line-height: 24px;
+        margin-top: 7px;
+    }
+    .lectures_item .switch {
+        margin-top: 10px;
+    }
+    .switch {
+        width: 82px;
+        height: 36px;
+    }
+    .slider:before {
+        height: 31px;
+        width: 31px;
+    }
+    .slider:after {
+        height: 15px;
+        width: 15px;
+        top: 11px;
+        left: 11px;
+        background-size: 14px 14px;
+    }
+    .switch input:checked + .slider:before {
+        -webkit-transform: translateX(44px);
+        -ms-transform: translateX(44px);
+        transform: translateX(44px);
+    }
+    .switch input:checked + .slider:after {
+        top: 12px;
+        left: auto;
+        right: 11px;
+        background-size: 15px 12px;
+    }
+    .authors_setting_item .sub_title {
+        margin-bottom: 10px;
+    }
+    .authors_setting_item {
+        margin-bottom: 20px;
+    }
+    .school_status_item p {
+        font-size: 15px;
+        line-height: 24px;
+        margin-top: 8px;
+    }
+    .school_status_btn {
+        margin-top: 20px;
+    }
+    .school_status_btn .btn-black-o {
+        min-width: 212px !important;
+        height: 45px;
+    }
+    .mlr-28 {
+        margin: 0px;
+    }
+    .plr-28 {
+        padding: 0px;
+    }
+    /*------------------ Setting Page Start End ------------------*/
+    /*------------------ Course Information Page Css Start ------------------*/
+    .course_previwe_list li {
+        margin-left: 10px;
+        width: calc(25% - 8px);
+        margin-top: 15px;
+    }
+    .preview_img {
+        height: 110px;
+    }
+    .preview_item span {
+        font-size: 14px;
+    }
+    .preview_item {
+        padding: 10px 15px 15px;
+    }
+    .make_author p {
+        font-size: 16px;
+    }
+    select.form-control {
+        background: url(../images/icon-arrow-down.png) no-repeat center right 15px white;
+        background-size: 15px;
+    }
+    .course_img label {
+        min-height: 210px;
+    }
+    .course_img img {
+        width: 50px;
+    }
+    .image_info {
+        margin: 75px 0px auto auto;
+    }
+    .point_list li {
+        font-size: 15px;
+        line-height: 25px;
+    }
+    .point_list li:after {
+        top: 9px;
+    }
+    .compliance_icon {
+        width: 20px;
+    }
+    .compliance_info {
+        width: calc(100% - 20px);
+        padding-left: 20px;
+    }
+    .compliance_info h3 {
+        font-size: 19px;
+    }
+    .compliance_info p {
+        font-size: 16px;
+    }
+    .compliance_item {
+        margin-bottom: 20px;
+    }
+    .course_previwe_list li {
+        margin-left: 15px !important;
+        width: calc(50% - 8px);
+        margin-top: 20px !important;
+    }
+    /*------------------ Course Information Page Css End ------------------*/
+    /*------------------ Add Coupan Page Css Start ------------------*/
+    .back img{
+        width: 10px;
+    }
+    .coupan_head_text h3 {
+        font-size: 20px;
+    }
+    .coupan_head_text img {
+        margin-left: 8px;
+        margin-top: 5px;
+        width: 15px;
+    }
+    .coupan_inner {
+        margin-top: 20px;
+    }
+    .coupan_img {
+        width: 90px;
+    }
+    .coupan_input {
+        width: calc(100% - 90px);
+    }
+    .coupan_input label {
+        font-size: 16px;
+        height: 45px;
+        padding: 0px 20px;
+    }
+    .coupan_amount {
+        margin-bottom: 25px;
+    }
+    .coupan_plan_price {
+        margin-bottom: 25px;
+    }
+    .coupan_plan_price span {
+        font-size: 16px;
+    }
+    .coupan_plan_price p {
+        font-size: 18.92px;
+    }
+    .mb-40 {
+        margin-bottom: 20px !important;
+    }
+    /*------------------ Add Coupan Page Css End ------------------*/
+    /*------------------ Coupan Listing Page Css Start ------------------*/
+    .coupan_item {
+        padding: 0px 20px;
+    }
+    .coupan_item_img {
+        height: 135px;
+    }
+    .custom_table {
+        border: 0;
+    }
+    .coupan_item_info {
+        padding: 0px 28px 16px;
+    }
+    .coupan_item:nth-child(1):after {
+        right: -15px;
+        top: 91px;
+        font-size: 18px;
+    }
+    .coupan_item h3 {
+        font-size: 15px;
+    }
+    .coupan_item p {
+        font-size: 15px;
+        line-height: 22px;
+    }
+    .custom_table thead {
+        border: none;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+    .custom_table tr {
+        border-bottom: 1px solid #ddd;
+        display: block;
+        margin-bottom: .625em;
+    }
+    .custom_table td {
+        border-bottom: 0px;
+        display: block;
+        font-size: 15px;
+        text-align: right;
+        padding: 10px 25px;
+    }
+    .custom_table td::before {
+        content: attr(data-label);
+        float: left;
+        font-weight: 500;
+        color: #222;
+    }
+    .custom_table td:last-child {
+        border-bottom: 0;
+    }
+    .action {
+        width: 100%;
+    }
+    .delete {
+        margin: 0px 5px 0px 15px;
+    }
+    .table_pag_outer {
+        padding: 15px 15px 15px 0px;
+    }
+    .table_pagination {
+        font-size: 16px;
+    }
+    .table_pagination a {
+        height: 28px;
+        width: 28px;
+        margin-left: 9px;
+    }
+    /*------------------ Coupan Listing Page Css End ------------------*/
+    /*------------------ Pricing Listing Page Css Start ------------------*/
+    .btn-head {
+        width: 155px;
+        height: 35px !important;
+        font-size: 14px !important;
+        min-width: initial !important;
+    }
+    .paymentplan .modal-body {
+        padding: 23px 25px 25px;
+    }
+    .popup_back {
+        left: 25px;
+        top: 25px;
+    }
+    .popup_back a {
+        font-size: 16px;
+    }
+    .popup_back i {
+        font-size: 30px;
+        line-height: 26px;
+        margin-top: -6px;
+        margin-right: 10px;
+    }
+    .close_popup {
+        right: 25px;
+        top: 15px;
+        height: 33px;
+        width: 33px;
+    }
+    .close_popup i {
+        font-size: 19px;
+    }
+    .modal_head h3 {
+        font-size: 24px;
+    }
+    .modal_content {
+        margin-top: 20px;
+    }
+    .modal_form {
+        width: 100%;
+    }
+    .modal_group {
+        margin-bottom: 15px;
+    }
+    .modal_group .modal_label {
+        font-size: 15px;
+        margin-bottom: 6px;
+    }
+    .modal_input select {
+        width: 90px !important;
+    }
+    .modal_input input[type='text'] {
+        width: calc(100% - 100px) !important;
+    }
+    .fr-box.fr-basic .fr-element {
+        min-height: 160px;
+    }
+    #description .fr-view * {
+        font-size: 15px;
+    }
+    .fr-toolbar .fr-command.fr-btn, .fr-popup .fr-command.fr-btn, .fr-modal .fr-command.fr-btn {
+        height: 25px;
+    }
+    .fr-toolbar .fr-command.fr-btn svg.fr-svg, .fr-popup .fr-command.fr-btn svg.fr-svg, .fr-modal .fr-command.fr-btn svg.fr-svg {
+        height: 20px;
+    }
+    .chk .checkmark {
+        height: 28px;
+        width: 28px;
+    }
+    .chk .checkmark:after {
+        left: 9px;
+        top: 5px;
+        width: 7px;
+        height: 13px;
+    }
+    .chk {
+        padding-left: 40px;
+        margin-bottom: 0px;
+        line-height: 24px;
+        font-size: 15px;
+    }
+    .modal_btn {
+        margin-right: 0px;
+    }
+    .modal_info {
+        width: 100%;
+        padding: 15px;
+        margin-top: 20px;
+    }
+    .modal_item {
+        margin-top: 25px;
+    }
+    .modal_item h3 {
+        font-size: 17px;
+    }
+    .modal_item ul li {
+        font-size: 15px;
+        margin-top: 8px;
+    }
+    .modal_item h3 i {
+        padding-left: 8px;
+        font-size: 25px;
+    }
+    .modal_item p {
+        margin-top: 7px;
+        font-size: 15px;
+        line-height: 26px;
+    }
+    .paymentplan .modal-dialog,.plan_type .modal-dialog{
+        max-width: 700px;
+    }
+    .plan_type .modal-body {
+        padding: 20px;
+    }
+    .plan_type .close_popup {
+        right: 25px;
+        top: 15px;
+    }
+    .plan_type_img {
+        height: 100px;
+    }
+    .plan_type_outer li {
+        padding: 20px 15px;
+    }
+    .plan_type_info h3 {
+        font-size: 18.17px;
+    }
+    .plan_type_info p {
+        font-size: 17px;
+        line-height: 29px;
+    }
+    /*------------------ Pricing Listing Page Css End ------------------*/
+    .header_menu {
+        margin-left: 30px;
+        padding-left: 30px;
+    }
+    .header_menu li a {
+        font-size: 15px;
+    }
+    .header_menu li {
+        margin-right: 35px;
+    }
+    .header_menu:after {
+        top: -11px;
+        height: calc(100% + 22px);
+    }
+    .header_menu li a:after {
+        bottom: -11px;
+        height: 3px;
+    }
+}
+@media(max-width:767px){
+    /*------------------ Author Information Page Css Start ------------------*/
+    body {
+        font-size: 15px;
+    }
+    body.active{
+        overflow: hidden;
+    }
+    header {
+        padding: 0px 15px;
+    }
+    .header_inner {
+        min-height: 50px;
+    }
+    .logo h1 {
+        font-size: 18px;
+    }
+    .header_user span{
+        display: none;
+    }
+    .header_user > a > img {
+        height: 27px;
+        width: 27px;
+        margin-left: 0px;
+    }
+    .content {
+        padding: 50px 0px 0px 0px;
+    }
+    .content_header {
+        min-height: 45px;
+        padding: 5px 15px;
+        position: relative;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        z-index: 5;
+    }
+    .content_header h2 {
+        font-size: 17px;
+    }
+    .content_body {
+        padding: 25px 15px;
+    }
+    .block_item {
+        padding-bottom: 25px;
+        margin-bottom: 25px;
+    }
+    .block_head {
+        width: 100%;
+        padding-right: 0px;
+    }
+    .block_head h3 {
+        font-size: 18px;
+    }
+    .block_head p {
+        font-size: 15px;
+        margin-top: 5px;
+        line-height: 24px;
+    }
+    .block_body {
+        width: 100%;
+        margin-top: 10px;
+    }
+    .block_card {
+        padding: 15px;
+        border-radius: 7px;
+    }
+    .label {
+        font-size: 16px;
+        margin-bottom: 6px;
+    }
+    .form-control {
+        border-radius: 7px;
+        height: 45px;
+        font-size: 15px;
+        padding: 0px 15px;
+    }
+    .btn-blue {
+        min-width: 100%;
+        height: 45px;
+        border-radius: 7px;
+        font-size: 16px;
+    }
+    .form_group {
+        margin-bottom: 15px;
+    }
+    .form_btn .btn{
+        width: 100%;
+    }
+    .author_stats_item label {
+        font-size: 16px;
+    }
+    .author_stats_item span {
+        font-size: 16px;
+    }
+    .author_stats_outer .row .col-md-6:nth-child(2) .author_stats_item {
+        margin-top: 20px;
+    }
+    .author_stats_item {
+        margin-top: 20px;
+    }
+    .btn-o {
+        font-size: 16px;
+        height: 50px;
+        min-width: 100%;
+        border-radius: 7px;
+    }
+    .block_item_last {
+        padding-bottom: 0px !important;
+        margin-bottom: 0px !important;
+    }
+    .toggleMenu{
+        display: block;
+    }
+    .logo {
+        margin-left: 35px;
+    }
+    .sidebar {
+        padding-top: 5px;
+        top: 50px;
+        width: 100%;
+        left: -100%;
+        height: calc(100vh - 50px);
+        z-index: 6;
+        -webkit-transition: all 0.3s linear;
+        -moz-transition: all 0.3s linear;
+        -ms-transition: all 0.3s linear;
+        -o-transition: all 0.3s linear;
+        transition: all 0.3s linear;
+    }
+    .sidebar.active{
+        left: 0px;
+    }
+    .menu > ul > li > a {
+        min-height: 50px;
+        padding: 5px 15px;
+        font-size: 16px;
+    }
+    .menu_icon {
+        width: 25px;
+        margin-right: 15px;
+    }
+    .submenu {
+        padding-left: 40px;
+    }
+    .submenu a {
+        
+        color: #a9eaff;
+        padding: 6px 15px;
+    }
+    /*------------------ Author Information Page Css End ------------------*/
+    /*------------------ Setting Page Start Start ------------------*/
+    .lectures_item {
+        margin-bottom: 30px;
+    }
+    .sub_title {
+        font-size: 16px;
+    }
+    .lectures_item p {
+        font-size: 15px;
+           line-height: 24px;
+        margin-top: 7px;
+    }
+    .lectures_item .switch {
+        margin-top: 10px;
+    }
+    .switch {
+        width: 82px;
+        height: 36px;
+    }
+    .slider:before {
+        height: 31px;
+        width: 31px;
+    }
+    .slider:after {
+        height: 15px;
+        width: 15px;
+        top: 11px;
+        left: 11px;
+        background-size: 14px 14px;
+    }
+    .switch input:checked + .slider:before {
+        -webkit-transform: translateX(44px);
+        -ms-transform: translateX(44px);
+        transform: translateX(44px);
+    }
+    .switch input:checked + .slider:after {
+        top: 12px;
+        left: auto;
+        right: 11px;
+        background-size: 15px 12px;
+    }
+    .authors_setting_item .sub_title {
+        margin-bottom: 10px;
+    }
+    .authors_setting_item {
+        margin-bottom: 20px;
+    }
+    .school_status_item p {
+        font-size: 15px;
+        line-height: 24px;
+        margin-top: 8px;
+    }
+    .school_status_btn {
+        margin-top: 20px;
+    }
+    .school_status_btn .btn{
+        width: 100%;
+    }
+    .school_status_btn .btn-black-o {
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+    .mlr-28 {
+        margin: 0px;
+    }
+    .plr-28 {
+        padding: 0px;
+    }
+    /*------------------ Setting Page Start End ------------------*/
+    /*------------------ Course Information Page Css Start ------------------*/
+    .course_previwe_list li {
+        margin-left: 0px;
+        width: 100%;
+        margin-top: 20px !important;
+        border-radius: 10px;
+    }
+    .course_previwe_list li:first-child{
+        margin-top: 0px !important;
+    }
+    .preview_img {
+        height: 125px;
+    }
+    .preview_item span {
+        font-size: 17px;
+    }
+    select.form-control {
+        background: url(../images/icon-arrow-down.png) no-repeat center right 12px white;
+        background-size: 14px;
+    }
+    .make_author p {
+        font-size: 15px;
+    }
+    .new_bio_outer {
+        margin-top: 0px;
+    }
+    .course_img label{
+        min-height: 200px;
+    }
+    .course_img img {
+        width: 50px;
+    }
+    .image_info {
+        max-width: 100%;
+        margin: 20px 0px 0px 0px;
+    }
+    .point_list li {
+        font-size: 16px;
+        margin-bottom: 8px;
+        line-height: 25px;
+    }
+    .point_list li:after {
+        top: 9px;
+    }
+    .image_btn_save {
+        position: relative;
+    }
+    .compliance_icon {
+        width: 18px;
+    }
+    .compliance_info {
+        width: calc(100% - 18px);
+        padding-left: 20px;
+    }
+    .compliance_info h3 {
+        font-size: 17px;
+    }
+    .compliance_info p {
+        font-size: 15px;
+    }
+    .compliance_item {
+        margin-bottom: 20px;
+    }
+    /*------------------ Course Information Page Css End ------------------*/
+    /*------------------ Add Coupan Page Css Start ------------------*/
+    .coupan_amount {
+        margin-bottom: 25px;
+        flex-wrap: wrap;
+    }
+    .coupan_img {
+        width: 90px;
+        padding-right: 0px;
+    }
+    .coupan_input {
+        width: 100%;
+        border-radius: 7px;
+    }
+    .coupan_input label {
+        font-size: 14px;
+        height: 45px;
+        padding: 0px 10px;
+    }
+    .back img {
+        width: 8px;
+    }
+    .coupan_head_text h3 {
+        font-size: 18px;
+    }
+    .coupan_head_text img {
+        margin-left: 8px;
+        margin-top: 4px;
+        width: 14px;
+    }
+    .coupan_plan_price span {
+        font-size: 15px;
+    }
+    .coupan_plan_price p {
+        font-size: 18px;
+    }
+    .coupan_plan_price {
+        margin-bottom: 25px;
+    }
+    .mb-40 {
+        margin-bottom: 15px !important;
+    }
+    .coupan_inner {
+        margin-top: 20px;
+    }    
+    /*------------------ Add Coupan Page Css End ------------------*/
+    /*------------------ Coupan Listing Page Css Start ------------------*/
+    .coupan_item {
+        margin-top: 30px;
+        width: 100%;
+        padding: 0px;
+    }
+    .coupan_item:nth-child(1):after {
+        content: none;
+    }
+    .coupan_item_img {
+        height: 115px;
+    }
+    .coupan_item_info {
+        padding: 0px;
+    }
+    .coupan_item h3 {
+        font-size: 17px;
+    }
+    .coupan_item p {
+        font-size: 15px;
+        line-height: 22px;
+        margin-top: 5px;
+    }
+    .custom_table {
+        border: 0;
+    }
+    .custom_table thead {
+        border: none;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+    .custom_table tr {
+        border-bottom: 1px solid #ddd;
+        display: block;
+        margin-bottom: .625em;
+    }
+    .custom_table td {
+        border-bottom: 0px;
+        display: block;
+        font-size: 15px;
+        text-align: right;
+        padding: 10px 15px;
+    }
+    .custom_table td::before {
+        content: attr(data-label);
+        float: left;
+        font-weight: 500;
+        color: #222;
+    }
+    .custom_table td:last-child {
+        border-bottom: 0;
+    }
+    .action {
+        width: 100%;
+    }
+    .delete {
+        margin: 0px 5px 0px 15px;
+    }
+    .table_pag_outer {
+        padding: 15px 15px 15px 0px;
+    }
+    .table_pagination {
+        font-size: 16px;
+    }
+    .table_pagination a {
+        height: 28px;
+        width: 28px;
+        margin-left: 9px;
+    }
+    /*------------------ Coupan Listing Page Css End ------------------*/
+    /*------------------ Pricing Listing Page Css Start ------------------*/
+    .btn-head {
+        width: 145px;
+        height: 35px !important;
+        font-size: 14px !important;
+        min-width: initial !important;
+    }
+    .paymentplan .modal-body {
+        padding: 55px 15px 15px;
+    }
+    .popup_back {
+        left: 15px;
+        top: 15px;
+    }
+    .popup_back a {
+        font-size: 16px;
+    }
+    .popup_back i {
+        font-size: 30px;
+        line-height: 26px;
+        margin-top: -6px;
+        margin-right: 10px;
+    }
+    .close_popup {
+        right: 11px;
+        top: 8px;
+        height: 33px;
+        width: 33px;
+    }
+    .close_popup i {
+        font-size: 19px;
+    }
+    .modal_head h3 {
+        font-size: 21px;
+    }
+    .modal_content {
+        margin-top: 20px;
+    }
+    .modal_form {
+        width: 100%;
+    }
+    .modal_group {
+        margin-bottom: 15px;
+    }
+    .modal_group .modal_label {
+        font-size: 15px;
+        margin-bottom: 6px;
+    }
+    .modal_input select {
+        width: 90px !important;
+    }
+    .modal_input input[type='text'] {
+        width: calc(100% - 100px) !important;
+    }
+    .fr-box.fr-basic .fr-element {
+        min-height: 160px;
+    }
+    #description .fr-view * {
+        font-size: 15px;
+    }
+    .fr-toolbar .fr-command.fr-btn, .fr-popup .fr-command.fr-btn, .fr-modal .fr-command.fr-btn {
+        height: 25px;
+    }
+    .fr-toolbar .fr-command.fr-btn svg.fr-svg, .fr-popup .fr-command.fr-btn svg.fr-svg, .fr-modal .fr-command.fr-btn svg.fr-svg {
+        height: 20px;
+    }
+    .chk .checkmark {
+        height: 28px;
+        width: 28px;
+    }
+    .chk .checkmark:after {
+        left: 9px;
+        top: 5px;
+        width: 7px;
+        height: 13px;
+    }
+    .chk {
+        padding-left: 40px;
+        margin-bottom: 0px;
+        line-height: 24px;
+        font-size: 15px;
+    }
+    .modal_btn {
+        margin-right: 0px;
+    }
+    .modal_info {
+        width: 100%;
+        padding: 15px;
+        margin-top: 20px;
+    }
+    .modal_item {
+        margin-top: 25px;
+    }
+    .modal_item h3 {
+        font-size: 17px;
+    }
+    .modal_item ul li {
+        font-size: 15px;
+        margin-top: 8px;
+    }
+    .modal_item h3 i {
+        padding-left: 8px;
+        font-size: 25px;
+    }
+    .modal_item p {
+        margin-top: 7px;
+        font-size: 15px;
+        line-height: 26px;
+    }
+    .paymentplan .modal-dialog,.plan_type .modal-dialog{
+        max-width: 97%;
+    }
+    .plan_type .modal-body {
+        padding: 20px 15px;
+    }
+    .plan_type_outer li {
+        border-left: 0px;
+        width: 100%;
+        padding: 25px 0px;
+    }
+    .plan_type .close_popup {
+        right: 11px;
+        top: 8px;
+    }
+    .plan_type_img {
+        height: 100px;
+    }
+    .plan_type_outer li:nth-child(2) {
+        border-top: 1px solid rgba(209,209,209,0.57);
+    }
+    .plan_type_info h3 {
+        font-size: 19px;
+    }
+    .plan_type_info p {
+        font-size: 16px;
+        line-height: 23px;
+    }
+    /*------------------ Pricing Listing Page Css End ------------------*/
+    .menu_icon_mobile{
+        display: flex;
+    }
+    .header_menu {
+        position: absolute;
+        margin-left: 0px;
+        padding-left: 0px;
+        background: #fff;
+        left: 0px;
+        width: 100%;
+        top: 46px;
+        padding: 0px 15px;
+        max-height: 0px;
+        overflow: hidden;
+        -webkit-transition: all 0.3s linear;
+        -moz-transition: all 0.3s linear;
+        -ms-transition: all 0.3s linear;
+        -o-transition: all 0.3s linear;
+        transition: all 0.3s linear;
+    }
+    .header_menu.active{
+        max-height: initial;
+    }
+    .header_menu:after {
+        content: none;
+    }
+    .menu_icon_mobile i{
+        -webkit-transition: all 0.3s linear;
+        -moz-transition: all 0.3s linear;
+        -ms-transition: all 0.3s linear;
+        -o-transition: all 0.3s linear;
+        transition: all 0.3s linear;
+    }
+    .menu_icon_mobile.active i{
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+    .header_menu ul {
+        display: block;
+        padding: 10px 0px;
+    }
+    .header_menu li {
+        margin-right: 0px;
+        border-bottom: 1px solid rgba(0,0,0,0.2);
+        padding: 0px 0px 8px;
+        margin-bottom: 8px;
+    }
+    .header_menu li:last-child{
+        border-bottom: 0px;
+        margin-bottom: 0px;
+    }
+    .header_menu li a {
+        font-size: 15px;
+    }
+    .header_menu li a:after {
+        content:none;
+    }
+    .header_menu li.active{
+        border-bottom-color: #1b2855;
+    }
+    .header_menu_outer {
+        justify-content: space-between;
+    }
+}
+
+/*------------------ Common Css Start ------------------*/
+.f_w_500{
+    font-weight: 500;
+}
+.text_black{
+    color: black;
+}
+.text_b_fw_500{
+    font-weight: 500;
+    color: black;
+}
+.text_skyblue{
+    color: #1b2855 !important;
+}
+.textfield{
+    height: 3.2rem;
+    border-radius:10px;
+    border: none;
+  }
+
+.upload_img label{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border-radius: 12px;
+    min-height: 100px;
+    cursor: pointer;
+    margin-bottom: 0px;
+}
+.upload_img img{
+    cursor: pointer;
+}
+.upload_img input{
+    opacity: 0;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+}
+.border_rounded{
+    border: 1px solid rgba(128, 128, 128, 0.5);
+    border-radius: 12px;
+}
+ 
+/*------------------ Common Css End ------------------*/
+
+/*------------------ Booking Details & Booking Css Start ------------------*/
+.Booking_details_service {
+    background-color: rgba(128, 128, 128, 0.308);
+    border-radius: 0.8rem;
+    padding: 0.3rem 1rem;
+    font-weight: 500;
+    color: rgb(109, 103, 103);
+    margin-right: 1rem;
+}
+
+.btn_light_blue{
+    background-color:#3750a4;
+    color: white;
+}
+.btn_light_blue:hover{
+    background-color:#1b2855;
+    color: white;
+}
+
+/*------------------ Booking Details & Booking Css End ------------------*/
+
