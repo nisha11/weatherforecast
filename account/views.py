@@ -138,6 +138,7 @@ def GetWeatherInfo(request):
 
 @login_required(login_url='user_login')
 def AllWeatherDetails(request):
+    # This function simply displays all the cities into tabular structure.
     city_weathers = CityWeather.objects.all().order_by("-id")
     data = {
         "city_weathers": city_weathers
