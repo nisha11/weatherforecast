@@ -47,21 +47,24 @@ def SearchCity(request):
     # call accuweather API for info start
     apikey = settings.ACCUWEATHER_APIKEY
     payload = {'apikey': apikey, 'q': q, 'language': 'en-us'}
+    
     r = requests.get('http://dataservice.accuweather.com/locations/v1/cities/search', payload)
-    json_data = str(r.json())
-    dict_data = json.loads(r.text)
+    print(r)
+    if r.status_code == 200:
+        json_data = str(r.json())
+        dict_data = json.loads(r.text)
 
-    if "Code" in dict_data and dict_data["Code"] == "ServiceUnavailable":
-        # If the usage limit has expired
-        data['id'] = 0
-        data['value'] = dict_data["Message"]
-        result.append(data)
-    else:
         for item in dict_data:
             if item:
                 data['id'] = item['Key']
                 data['value'] = item['LocalizedName']+" "+item['Country']['LocalizedName']
                 result.append(data)
+    else:
+        data['id'] = 0
+        data['value'] = 'Some Error'
+        result.append(data)
+
+    
 
     dump=json.dumps(result)
     # call accuweather API for info end
